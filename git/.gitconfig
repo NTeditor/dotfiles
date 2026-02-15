@@ -1,0 +1,20 @@
+[credential]
+	helper = /usr/bin/pass-git-helper
+[user]
+	email = nteditor4@gmail.com
+	name = NTeditor
+	signingKey = 74E5464CC768C697F1405A12C024B9B4BA5C7C19
+[commit]
+	gpgSign = true
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
+[merge]
+	tool = nvimdiff
+[mergetool "meld"]
+	path = /usr/bin/meld
+[mergetool]
+	prompt = false
+[mergetool "nvimdiff"]
+	layout = MERGED
