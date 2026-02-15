@@ -16,3 +16,9 @@ vim.keymap.set({ "i", "v" }, "fd", "<Esc>", { desc = "Esc" })
 vim.keymap.set({ "t" }, "fd", "<C-\\><C-n>", { desc = "Esc" })
 vim.keymap.set({ "i", "v" }, "<Esc>", "<Nop>", { desc = "Disable Esc" })
 vim.keymap.set({ "n", "v" }, "<leader><leader>", '"+', { desc = "System clipboard" })
+
+vim.filetype.add({
+	extension = {
+		arb = "jsonc",
+	},
+})

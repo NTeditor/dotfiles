@@ -8,7 +8,13 @@ return {
 			"nvim-tree/nvim-web-devicons",
 		},
 		keys = {
-			{ "<leader>e", "<cmd>Neotree toggle<cr>", desc = "Open file tree" },
+			{
+				"<leader>e",
+				function()
+					require("neo-tree.command").execute({ toggle = true })
+				end,
+				desc = "Open file tree",
+			},
 		},
 		opts = {
 			event_handlers = {

@@ -32,4 +32,15 @@ return {
 			{ dest = "Telescope buffers" },
 		},
 	},
+	opts = {
+		defaults = {
+			mappings = {
+				i = {
+					["fd"] = function(prompt_bufnr)
+						require("telescope.actions").close(prompt_bufnr)
+					end,
+				},
+			},
+		},
+	},
 }
