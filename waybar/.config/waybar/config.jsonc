@@ -1,0 +1,33 @@
+// -*- mode: jsonc -*-
+{
+  "height": 26,
+  "spacing": 4,
+  "margin-top": 4,
+  "margin-left": 7,
+  "margin-right": 7,
+  "margin-bottom": 0,
+  "modules-left": ["hyprland/workspaces", "hyprland/language"],
+  "modules-right": ["wireplumber", "cpu", "memory", "tray", "clock"],
+  "wireplumber": {
+    "format": "[{volume}% VOL]",
+  },
+  "cpu": {
+    "format": "[{usage}% CPU]",
+    "tooltip": false,
+  },
+  "memory": {
+    "format": "[{}% RAM]",
+  },
+  "hyprland/language": {
+    "format": "[{short}]",
+    "keyboard-name": "at-translated-set-2-keyboard",
+  },
+  "tray": {
+    "spacing": 10,
+  },
+  "clock": {
+    "format": "[{:%H:%M}]",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": "[{:%Y-%m-%d}]",
+  },
+}
