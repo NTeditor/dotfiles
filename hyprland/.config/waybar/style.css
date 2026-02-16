@@ -1,3 +1,7 @@
+@define-color primary_color #5e81ac;
+@define-color bg_color #2e3440;
+@define-color text_color #e5e9f0;
+
 * {
   font-family:
     JetBrainsMono Nerd Font,
@@ -20,8 +24,8 @@ window#waybar {
 #language,
 #keyboard-state,
 #clock {
-  background-color: #282828;
-  color: #ebdbb2;
+  background-color: @bg_color;
+  color: @text_color;
   padding: 0px;
   padding-left: 3px;
   padding-right: 3px;
@@ -35,11 +39,11 @@ window#waybar {
 
 #workspaces button.active,
 #workspaces button.active label {
-  background-color: #d65d0e;
+  background-color: @primary_color;
   border-radius: 5px;
 }
 
 #workspaces {
-  background-color: #282828;
+  background-color: @bg_color;
   border-radius: 5px;
 }
