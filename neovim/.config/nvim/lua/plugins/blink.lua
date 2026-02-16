@@ -28,12 +28,12 @@ return {
 			documentation = {
 				auto_show = true,
 				window = {
-					border = "rounded",
+					border = "none",
 				},
 			},
 			menu = {
 				auto_show = true,
-				border = "rounded",
+				border = "none",
 			},
 		},
 		fuzzy = { implementation = "prefer_rust_with_warning" },
