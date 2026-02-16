@@ -1,6 +1,7 @@
 return {
 	{
 		"ellisonleao/gruvbox.nvim",
+		enabled = false,
 		lazy = false,
 		priority = 1000,
 		opts = {
@@ -19,7 +20,7 @@ return {
 	},
 	{
 		"folke/tokyonight.nvim",
-		enabled = false,
+		enabled = true,
 		lazy = false,
 		priority = 1000,
 		opts = {},
