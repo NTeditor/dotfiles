@@ -1,15 +1,32 @@
+---@class MyLspconfigOpts
+---@field servers string[]
+
 return {
 	"neovim/nvim-lspconfig",
 	event = "VeryLazy",
+	---@type MyLspconfigOpts
+	opts = {
+		servers = { "lua_ls", "rust_analyzer", "pyright", "vtsls", "gopls", "dartls" },
+	},
 	keys = {
 		{
 			"<leader>lr",
-			vim.lsp.buf.rename,
+			function()
+				vim.lsp.buf.rename()
+			end,
 			{ desc = "LSP Rename" },
 		},
+		{
+			"K",
+			function()
+				vim.lsp.buf.hover()
+			end,
+			desc = "LSP Hover",
+		},
 	},
-	config = function()
-		vim.lsp.enable({ "lua_ls", "rust_analyzer", "pyright", "vtsls", "gopls", "dartls" })
+	---@param opts MyLspconfigOpts
+	config = function(_, opts)
+		vim.lsp.enable(opts.servers)
 
 		-- vim.diagnostic.config({
 		-- 	float = false,
