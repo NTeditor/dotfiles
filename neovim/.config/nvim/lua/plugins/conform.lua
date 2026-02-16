@@ -27,6 +27,7 @@ return {
 			css = { "prettier" },
 			python = { "black" },
 			go = { "gofmt" },
+			c = { "clang-format" },
 		},
 		format_on_save = {
 			lsp_format = "fallback",
